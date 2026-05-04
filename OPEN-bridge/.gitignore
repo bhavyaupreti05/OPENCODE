@@ -51,9 +51,12 @@ jspm_packages/
 
 # Large files
 mongodb-extract/
+mongodb-unpacked/
+**/mongodb-unpacked/
 *.msi
 *.zip
 *.pdb
+*.exe
 mongodb-data/
 .env.*
 
