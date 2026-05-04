@@ -1,0 +1,181 @@
+.practice-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.practice-hero {
+  background: #eef6ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 18px;
+  padding: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.practice-hero h1 {
+  margin: 0 0 12px;
+  font-size: 2.4rem;
+  color: #1f4db5;
+}
+
+.practice-hero p {
+  margin: 0;
+  color: #44546f;
+  font-size: 1.05rem;
+}
+
+.practice-intro-card {
+  background: white;
+  border: 1px solid #e4ebf7;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.08);
+}
+
+.practice-intro-card h2 {
+  margin-top: 0;
+  color: #173b76;
+}
+
+.practice-intro-card ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+  color: #52606d;
+}
+
+.practice-intro-card li {
+  margin-bottom: 12px;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 32px;
+}
+
+.challenge-card {
+  background: white;
+  border: 1px solid #e7eaf3;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+  box-shadow: 0 4px 18px rgba(35, 64, 161, 0.08);
+}
+
+.challenge-badge {
+  display: inline-block;
+  background: #eef3ff;
+  color: #3d4db7;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.challenge-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.3rem;
+  color: #1f3d7a;
+}
+
+.challenge-card p {
+  color: #5c6f8d;
+  line-height: 1.75;
+  margin: 0 0 18px;
+}
+
+.challenge-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.challenge-meta span {
+  background: #f4f7ff;
+  color: #3f5bb5;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.challenge-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.practice-note {
+  background: #f3f9f8;
+  border: 1px solid #d9ede7;
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+}
+
+.practice-note h2 {
+  margin-top: 0;
+  color: #1f5d45;
+}
+
+.practice-note p {
+  color: #4f6860;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #4b6efc;
+  color: white;
+}
+
+.btn-secondary {
+  background: #f4f5ff;
+  color: #2b3d8f;
+  border: 1px solid #d1d7f4;
+}
+
+.btn-tertiary {
+  background: #ffffff;
+  color: #2d5c4f;
+  border: 1px solid #cde7dc;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 980px) {
+  .challenges-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .practice-page {
+    padding: 20px;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+}
